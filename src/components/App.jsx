@@ -2,6 +2,7 @@ import HomePage from 'pages/HomePage/HomePage';
 import MoviesDetails from 'pages/MoviesDetails/MoviesDetails';
 import MoviesPage from 'pages/MoviesPage/MoviesPage';
 import { Routes, Route } from 'react-router-dom';
+import Cast from './Cast/Cast';
 import { Layout } from './Layout/Layout';
 
 export const App = () => {
@@ -12,7 +13,7 @@ export const App = () => {
           <Route index element={<HomePage />} />
           <Route path="movies" element={<MoviesPage />} />
           <Route path="movies/:moviesId" element={<MoviesDetails />}>
-            <Route path="cast" element={<div>CAST</div>} />
+            <Route path="cast" element={<Cast />} />
             <Route path="reviews" element={<div>REVIEWS</div>} />
           </Route>
         </Route>
