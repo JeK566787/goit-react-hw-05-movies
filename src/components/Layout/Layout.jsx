@@ -1,18 +1,19 @@
 import { Outlet, NavLink } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import css from './Layout.module.css';
 
 export const Layout = () => {
   return (
     <>
-      <header>
+      <header className={css.header}>
         <div>
           <nav>
-            <ul>
-              <li>
+            <ul className={css.headerList}>
+              <li className={css.headerItem}>
                 <NavLink to="/">Home</NavLink>
               </li>
-              <li>
+              <li className={css.headerItem}>
                 <NavLink to="/movies">Movies</NavLink>
               </li>
             </ul>

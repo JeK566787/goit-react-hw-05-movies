@@ -1,0 +1,26 @@
+.castList {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  color: grey;
+}
+.castItem {
+  padding: 5px;
+  max-width: 100px;
+  border: 1px solid rgb(232, 222, 222);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px grey;
+}
+.castImgContainer {
+  width: 100px;
+  height: 150px;
+
+  border-radius: 30%;
+  overflow: hidden;
+}
+.castImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

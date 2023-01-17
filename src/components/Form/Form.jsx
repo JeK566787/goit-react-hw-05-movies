@@ -1,20 +1,21 @@
-import { useSearchParams } from 'react-router-dom';
+import css from './Form.module.css';
 
-const Form = () => {
-  const [, setSearchParams] = useSearchParams();
-
+const Form = ({ onSubmit }) => {
   const handleSubmit = e => {
     e.preventDefault();
+    onSubmit(e.target.elements.searchQuery.value);
 
-    setSearchParams({ q: e.target.elements.searchQuery.value });
+    e.target.elements.searchQuery.value = '';
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        <input type={'text'} name="searchQuery" />
+        <input className={css.formInput} type={'text'} name="searchQuery" />
       </label>
-      <button type="submit">SEARCH</button>
+      <button className={css.formButton} type="submit">
+        SEARCH
+      </button>
     </form>
   );
 };

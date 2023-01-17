@@ -1,0 +1,37 @@
+.formButton {
+  margin-left: 15px;
+  padding: 5px;
+  border: 1px solid rgb(223, 214, 214);
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(229, 221, 221);
+  box-shadow: 10px 5px 5px grey;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: grey;
+
+  text-decoration: none;
+}
+.formButton:hover {
+  background-color: grey;
+  color: rgb(231, 66, 140);
+
+  box-shadow: 10px 5px 5px rgb(231, 66, 140);
+}
+
+.formInput {
+  padding: 5px;
+  border: 1px solid rgb(223, 214, 214);
+  display: inline-flex;
+  align-items: center;
+  background-color: rgb(229, 221, 221);
+  box-shadow: 10px 5px 5px grey;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: grey;
+
+  width: 300px;
+}
+.formInput:focus-visible {
+  outline: none;
+}

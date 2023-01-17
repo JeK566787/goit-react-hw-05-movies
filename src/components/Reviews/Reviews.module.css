@@ -1,0 +1,12 @@
+.reviewsItem {
+  list-style: none;
+  max-width: 900px;
+  border: 1px solid rgb(232, 222, 222);
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px grey;
+  gap: 15px;
+  color: grey;
+
+  margin-bottom: 15px;
+  padding: 0 10px;
+}

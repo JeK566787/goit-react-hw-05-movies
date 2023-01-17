@@ -1,0 +1,22 @@
+.header {
+  border-bottom: 1px solid rgb(210, 205, 205);
+  box-shadow: 10px 5px 5px grey;
+}
+
+.headerList {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.headerItem > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: grey;
+}
+
+.headerItem:hover > a {
+  color: rgb(231, 66, 140);
+  text-decoration: none;
+}
