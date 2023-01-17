@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { toast } from 'react-toastify';
 import { getMoviesById } from 'serevises/API';
 import Loader from 'components/Loader/Loader';
@@ -93,7 +93,9 @@ const MoviesDetails = () => {
           Reviews
         </Link>
       </div>
-      <Outlet />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Outlet />
+      </Suspense>
       {isLoading && <Loader />}
     </section>
   );
