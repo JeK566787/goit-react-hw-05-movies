@@ -11,7 +11,7 @@ const NotFound = () => {
       <Link className={css.button} to={backLink}>
         GO BACK
       </Link>
-      <h1 className={css.title}>PAGE DID NOT FIND</h1>
+      <h1 className={css.title}>PAGE WAS NOT FOUND</h1>
     </div>
   );
 };
